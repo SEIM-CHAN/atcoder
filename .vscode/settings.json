@@ -2,5 +2,9 @@
     "github.copilot.enable": {
         "*": false
     },
-    "editor.inlineSuggest.enabled": false
+    "editor.inlineSuggest.enabled": false,
+    "isort.importStrategy": "fromEnvironment",
+    "isort.interpreter": [
+        "C:\\Users\\USER\\.local\\bin\\python3.10.exe"
+    ]
 }

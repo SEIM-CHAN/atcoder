@@ -7,19 +7,10 @@
 N = int(input())
 A = list(map(int, input().split()))
 
-print(A)
+count = 0
 
-sum = 0
-AA = []
-for i in A:
-    Anum = i / 2
-    if Anum % 2 == 0:
-        AA.append(Anum)
-    elif Anum % 2 != 0:
-        break
-    sum += 1
-    
-print(sum)
-print(AA)
+while all(x % 2 == 0 for x in A):
+    A = [x // 2 for x in A]
+    count += 1
 
-# まだ途中
+print(count)
