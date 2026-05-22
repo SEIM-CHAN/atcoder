@@ -1,0 +1,15 @@
+[
+    {
+        "label": "Run current Python file",
+        "command": "& 'C:\\Users\\USER\\.local\\bin\\python3.10.exe' '$ZED_FILE'",
+        "cwd": "$ZED_DIRNAME",
+        "use_new_terminal": false,
+        "allow_concurrent_runs": true,
+        "reveal": "always",
+        "hide": "never",
+        "shell": "system",
+        "show_summary": true,
+        "show_command": true,
+        "save": "current"
+    }
+]

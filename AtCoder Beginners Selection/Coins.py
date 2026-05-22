@@ -17,15 +17,37 @@ sum = 1200
 一番大きい金額の硬貨が何枚使えるかで変わる
 (500*i + 100*j + 50*k) == 1200ならcount+1
 '''
+
+# 自分の答え
 count = 0
 for i in range(A+1):
     if 500*i > X:
         break
-    else:
-        if i == 0:
+    elif 500*i <= X:
             for j in range(B+1):
-                if j == 0:
-                    for k in range(C+1):
+                if 500*i + 100*j > X:
+                    break
+                elif 500*i + 100*j <= X:
+                        for k in range(C+1):
+                            if 500*i + 100*j + 50*k > X:
+                                break
+                            elif 500*i + 100*j + 50*k == X:
+                                    count +=1
+
+print(count)
+
+# ほかの答え①
+ans = 0 
+for i in range(A+1):
+    for j in range(B+1):
+        for k in range(C+1):
+            if 500*i + 100*j + 50*k == X:
+                ans += 1
+
+print(ans)
+
+# ほかの答え②
+
                     
 # 途中    
     
