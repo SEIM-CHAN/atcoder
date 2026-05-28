@@ -7,12 +7,14 @@ N, A, B = map(int, input().split())
 # A以上B以下であれば空の配列にappend
 
 nums = [i + 1 for i in range(N)]
+print(nums)
 sumlist = []
 for num in nums:
     num_sum = sum(list(map(int, str(num))))
-    print(num_sum)
-    if num_sum >= A or num_sum < B:
-        sumlist.append(num_sum)
+    # print(num_sum)
+    if num_sum >= A and num_sum <= B:
+        sumlist.append(num)
+    print(sumlist)
 
 result = sum(sumlist)
 print(result)
